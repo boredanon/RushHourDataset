@@ -168,7 +168,7 @@ void identify_cc(uint64_t cluster) {
     std::ofstream goals_outfile;
 
     std::stringstream ss;
-    ss << "0x" << std::hex << cluster;
+    ss << "0x" << std::hex << true_r;
     std::string basename = ss.str();
     edges_outfile.open(basename + "_edges.txt");
     goals_outfile.open(basename + "_goals.txt");
